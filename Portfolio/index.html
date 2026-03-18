@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Ali · AI/ML engineer (black & yellow)</title>
+    <!-- Fonts & icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- navigation tabs (clickable + smooth) -->
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo"><i class="bi bi-cpu"></i> Ahmed Ali</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="btn btn-primary"
+          ><i class="bi bi-send"></i> Let's talk</a
+        >
+      </nav>
+    </div>
+
+    <!-- home section with profile (id for navigation) -->
+    <div
+      id="home"
+      class="container section-offset"
+      style="scroll-margin-top: 40px"
+    >
+      <div class="hero">
+        <div class="hero-content">
+          <span class="hero-badge"
+            >AI/ML Engineer · Master's thesis (pub.)</span
+          >
+          <h1>Ahmed Ali</h1>
+          <div class="hero-highlight">
+            <i class="bi bi-envelope-fill"></i> ahmedalidsai851@gmail.com
+            <span style="font-size: 1.2rem; color: var(--text-dim)"
+              >· +44 7923 408412</span
+            >
+          </div>
+          <p class="hero-desc">
+            Belfast based · building robust models from research to production.
+            Specialized in vision, generative AI & end‑to‑end ML pipelines.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-chip">
+              <i class="bi bi-award-fill"></i> Publication approved
+            </div>
+            <div class="stat-chip">
+              <i class="bi bi-graph-up"></i> 6+ projects shipped
+            </div>
+            <div class="stat-chip">
+              <i class="bi bi-geo-alt-fill"></i> Belfast, BT15 1FD
+            </div>
+          </div>
+          <div
+            style="
+              margin-top: 1.5rem;
+              display: flex;
+              gap: 1rem;
+              flex-wrap: wrap;
+            "
+          >
+            <a
+              href="https://github.com/ahmed-ai"
+              target="_blank"
+              class="btn btn-outline-light"
+              ><i class="bi bi-github"></i> GitHub</a
+            >
+            <a
+              href="#"
+              class="btn btn-outline-light"
+              onclick="alert('Resume download — replace with actual file')"
+              ><i class="bi bi-file-earmark-text"></i> Resume</a
+            >
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <!-- abstract avatar monogram with smooth pulse & rotate animations -->
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='45' r='32' fill='%23f5c542' opacity='0.2' /%3E%3Ccircle cx='50' cy='40' r='26' fill='%23f5c542' opacity='0.3' /%3E%3Ctext x='50' y='68' font-size='48' text-anchor='middle' fill='%23f5c542' font-family='Outfit, sans-serif' font-weight='700'%3EA%3C/text%3E%3C/svg%3E"
+            alt="Ahmed avatar"
+            class="avatar-animated"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- main container (experience + projects) -->
+    <div class="container">
+      <!-- expertise chips as yellow-on-black badges -->
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.7rem;
+          justify-content: center;
+          margin-bottom: 8rem;
+        "
+      >
+        <span class="skill-badge-xl"
+          ><i class="bi bi-eye-fill me-1"></i> Computer Vision</span
+        >
+        <span class="skill-badge-xl"
+          ><i class="bi bi-magic me-1"></i> Generative AI</span
+        >
+        <span class="skill-badge-xl"
+          ><i class="bi bi-graph-up me-1"></i> Predictive / Time‑Series</span
+        >
+        <span class="skill-badge-xl"
+          ><i class="bi bi-diagram-3 me-1"></i> End‑to‑end ML</span
+        >
+        <span class="skill-badge-xl"
+          ><i class="bi bi-chat me-1"></i> NLP & RL</span
+        >
+        <span class="skill-badge-xl"
+          ><i class="bi bi-cloud-arrow-up me-1"></i> Azure · Git</span
+        >
+      </div>
+
+      <!-- row: left column (experience) / right column (projects & skills) -->
+      <div class="row g-5" style="display: flex; flex-wrap: wrap; gap: 2rem">
+        <!-- left: professional experience -->
+        <div class="col-lg-7" style="flex: 1 1 60%; min-width: 300px">
+          <h2
+            id="experience"
+            class="section-title section-offset"
+            style="scroll-margin-top: 80px"
+          >
+            Experience
+          </h2>
+          <div class="section-sub">industry + research</div>
+
+          <div class="exp-cards">
+            <!-- AI Engineer / Data Scientist -->
+            <div class="exp-card">
+              <div class="exp-header">
+                <span class="exp-role">AI Engineer / Data Scientist</span>
+                <span class="exp-date"
+                  ><i class="bi bi-calendar3 me-1"></i>Sept 2024 – Present</span
+                >
+              </div>
+              <div class="exp-company">Term Project & Freelance · Belfast</div>
+              <p class="exp-desc">
+                Deep learning for image & text – CNNs, ViT, BERT, Azure +
+                GitHub. Led degraded image classification robustness
+                (publication approved).
+              </p>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 0.5rem;
+                  margin-bottom: 1rem;
+                "
+              >
+                <span class="tech-pill">PyTorch</span
+                ><span class="tech-pill">ViT</span
+                ><span class="tech-pill">Azure</span
+                ><span class="tech-pill">MLflow</span>
+              </div>
+              <div>
+                <strong style="color: var(--primary-yellow)"
+                  >Major projects (selection):</strong
+                >
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 0.5rem;
+                    margin: 1rem 0;
+                  "
+                >
+                  <span
+                    ><i
+                      class="bi bi-check-circle-fill text-success small me-1"
+                      style="color: #f5c542"
+                    ></i>
+                    Fake news detection</span
+                  >
+                  <span
+                    ><i
+                      class="bi bi-check-circle-fill text-success small me-1"
+                      style="color: #f5c542"
+                    ></i>
+                    Human Activity Recognition</span
+                  >
+                  <span
+                    ><i
+                      class="bi bi-check-circle-fill text-success small me-1"
+                      style="color: #f5c542"
+                    ></i>
+                    Smart Grid Q‑learning</span
+                  >
+                  <span
+                    ><i
+                      class="bi bi-check-circle-fill text-success small me-1"
+                      style="color: #f5c542"
+                    ></i>
+                    Damage propagation (CMAPSS)</span
+                  >
+                  <span
+                    ><i
+                      class="bi bi-check-circle-fill text-success small me-1"
+                      style="color: #f5c542"
+                    ></i>
+                    Degraded image classification*</span
+                  >
+                  <span
+                    ><i
+                      class="bi bi-check-circle-fill text-success small me-1"
+                      style="color: #f5c542"
+                    ></i>
+                    BT churn prediction</span
+                  >
+                </div>
+                <span class="publication-badge"
+                  ><i class="bi bi-award-fill me-1"></i> Comparative study on
+                  degraded images — approved for publication</span
+                >
+              </div>
+            </div>
+
+            <!-- Senior Technical Artist · Slapp Studios -->
+            <div class="exp-card">
+              <div class="exp-header">
+                <span class="exp-role">Senior Technical Artist</span>
+                <span class="exp-date"
+                  ><i class="bi bi-calendar3 me-1"></i>Oct 2023 – Aug 2024</span
+                >
+              </div>
+              <div class="exp-company">Slapp Studios, Lahore</div>
+              <p class="exp-desc">
+                Liaison between programming & design, end‑to‑end art pipeline,
+                performance optimization, user feedback integration.
+              </p>
+              <div class="achievement-grid">
+                <span class="achieve-item"
+                  ><i class="bi bi-arrow-up-short"></i> 18% productivity
+                  boost</span
+                >
+                <span class="achieve-item"
+                  ><i class="bi bi-star-fill"></i> 25% decrease in negative
+                  reviews</span
+                >
+                <span class="achieve-item"
+                  ><i class="bi bi-cpu"></i> frame rate & memory
+                  optimization</span
+                >
+              </div>
+            </div>
+
+            <!-- 3D Game Artist & Inspirit -->
+            <div class="exp-card">
+              <div class="exp-header">
+                <span class="exp-role">3D Game Artist</span>
+                <span class="exp-date">2022 – Oct 2023</span>
+              </div>
+              <div class="exp-company">Slapp Studios, Lahore</div>
+              <p>
+                3D assets, characters, rigging, advanced rendering. Collaborated
+                with art directors.
+              </p>
+            </div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <span class="exp-role">3D Artist</span>
+                <span class="exp-date">Dec 2019 – Apr 2022</span>
+              </div>
+              <div class="exp-company">Inspirit Art Studios, Lahore</div>
+              <p>
+                3D models & textures, creative brainstorming, delivered on
+                schedule.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education boxes -->
+          <h2 class="section-title" style="margin-top: 2rem">Education</h2>
+          <div
+            class="row g-3 mt-2 exp-card"
+            style="display: flex; gap: 1rem; margin-top: 2rem"
+          >
+            <div
+              style="
+                flex: 1;
+                background: var(--card-dark);
+                border-radius: 28px;
+                padding: 1.6rem;
+                border: 1px solid var(--border-dark);
+              "
+            >
+              <h4
+                style="
+                  font-weight: 700;
+                  font-family: &quot;Outfit&quot;;
+                  color: var(--primary-yellow);
+                "
+              >
+                MSc Artificial Intelligence
+              </h4>
+              <p style="color: var(--text-dim)">
+                Ulster University, Belfast · Sept 2024 – Aug 2025
+              </p>
+            </div>
+            <div
+              style="
+                flex: 1;
+                background: var(--card-dark);
+                border-radius: 28px;
+                padding: 1.6rem;
+                border: 1px solid var(--border-dark);
+              "
+            >
+              <h4
+                style="
+                  font-weight: 700;
+                  font-family: &quot;Outfit&quot;;
+                  color: var(--primary-yellow);
+                "
+              >
+                BSc Software Engineering
+              </h4>
+              <p style="color: var(--text-dim)">
+                University of Lahore · 2015 – 2019
+              </p>
+            </div>
+          </div>
+
+          <!-- extra skill block - aligned with education design -->
+          <div
+            style="
+              margin-top: 2rem;
+              background: var(--card-dark);
+              border-radius: 28px;
+              padding: 1.6rem;
+              border: 1px solid var(--border-dark);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 1.5rem;
+              "
+            >
+              <i
+                class="bi bi-trophy-fill"
+                style="font-size: 2.4rem; color: var(--primary-yellow)"
+              ></i>
+              <h2
+                class="section-title"
+                style="margin: 0; color: var(--primary-yellow)"
+              >
+                Additional expertise & honours
+              </h2>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.2rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <span
+                class="skill-badge-xl"
+                style="
+                  background: rgba(255, 215, 0, 0.1);
+                  padding: 0.6rem 1.2rem;
+                  border-radius: 50px;
+                  border: 1px solid rgba(255, 215, 0, 0.3);
+                "
+                ><i
+                  class="bi bi-cup-hot-fill"
+                  style="color: var(--primary-yellow)"
+                ></i>
+                1st place · internal hackathon 2024</span
+              >
+              <span
+                class="skill-badge-xl"
+                style="
+                  background: rgba(255, 215, 0, 0.1);
+                  padding: 0.6rem 1.2rem;
+                  border-radius: 50px;
+                  border: 1px solid rgba(255, 215, 0, 0.3);
+                "
+                ><i
+                  class="bi bi-translate"
+                  style="color: var(--primary-yellow)"
+                ></i>
+                bilingual (English/Urdu)</span
+              >
+              <span
+                class="skill-badge-xl"
+                style="
+                  background: rgba(255, 215, 0, 0.1);
+                  padding: 0.6rem 1.2rem;
+                  border-radius: 50px;
+                  border: 1px solid rgba(255, 215, 0, 0.3);
+                "
+                ><i
+                  class="bi bi-people-fill"
+                  style="color: var(--primary-yellow)"
+                ></i>
+                mentorship (3 juniors)</span
+              >
+              <span
+                class="skill-badge-xl"
+                style="
+                  background: rgba(255, 215, 0, 0.1);
+                  padding: 0.6rem 1.2rem;
+                  border-radius: 50px;
+                  border: 1px solid rgba(255, 215, 0, 0.3);
+                "
+                ><i
+                  class="bi bi-bar-chart-fill"
+                  style="color: var(--primary-yellow)"
+                ></i>
+                PowerBI / Tableau</span
+              >
+              <span
+                class="skill-badge-xl"
+                style="
+                  background: rgba(255, 215, 0, 0.1);
+                  padding: 0.6rem 1.2rem;
+                  border-radius: 50px;
+                  border: 1px solid rgba(255, 215, 0, 0.3);
+                "
+                ><i
+                  class="bi bi-database-fill"
+                  style="color: var(--primary-yellow)"
+                ></i>
+                SQL, NoSQL</span
+              >
+              <span
+                class="skill-badge-xl"
+                style="
+                  background: rgba(255, 215, 0, 0.1);
+                  padding: 0.6rem 1.2rem;
+                  border-radius: 50px;
+                  border: 1px solid rgba(255, 215, 0, 0.3);
+                "
+                ><i class="bi bi-git" style="color: var(--primary-yellow)"></i>
+                CI/CD for ML</span
+              >
+              <span
+                class="skill-badge-xl"
+                style="
+                  background: rgba(255, 215, 0, 0.1);
+                  padding: 0.6rem 1.2rem;
+                  border-radius: 50px;
+                  border: 1px solid rgba(255, 217, 0, 0.3);
+                "
+                ><i class="bi bi-mic" style="color: var(--primary-yellow)"></i>
+                technical speaking</span
+              >
+            </div>
+            <p
+              style="
+                color: var(--text-dim);
+                margin: 0.5rem 0 0 0;
+                padding-top: 0.5rem;
+                border-top: 1px solid var(--border-dark);
+              "
+            >
+              <i
+                class="bi bi-check-circle-fill"
+                style="color: var(--primary-yellow)"
+              ></i>
+              Reviewer for undergraduate AI projects · volunteer STEM tutor
+            </p>
+          </div>
+        </div>
+
+        <!-- right column: key projects + technical arsenal -->
+        <div class="col-lg-5" style="flex: 1 1 35%; min-width: 280px">
+          <h2
+            id="projects"
+            class="section-title section-offset"
+            style="scroll-margin-top: 80px"
+          >
+            Key projects
+          </h2>
+          <div class="section-sub">research & applied</div>
+
+          <div class="projects-grid" style="grid-template-columns: 1fr 1fr">
+            <!-- Degraded image classification (featured) -->
+            <div class="project-tile" style="grid-column: span 2">
+              <span class="project-tag"
+                ><i class="bi bi-camera"></i> computer vision ·
+                publication</span
+              >
+              <h3>Degraded image classification (ViT vs CNN)</h3>
+              <p class="project-desc">
+                Master's thesis on robust deep learning for noisy/blurred images
+                — novel contributions,
+                <strong style="color: #f5c542">approved for publication</strong
+                >.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">PyTorch</span
+                ><span class="tech-pill">ViT</span
+                ><span class="tech-pill">ResNet</span
+                ><span class="tech-pill">ConvNeXt</span>
+              </div>
+              <div style="margin-top: 1.2rem">
+                <a
+                  href="https://github.com/ahmed-ai/degraded-image-classification"
+                  target="_blank"
+                  style="
+                    text-decoration: none;
+                    background: #2a2a2a;
+                    padding: 0.4rem 1.2rem;
+                    border-radius: 40px;
+                    font-weight: 500;
+                    color: var(--primary-yellow);
+                    border: 1px solid var(--primary-yellow);
+                  "
+                  ><i class="bi bi-github"></i> code</a
+                >
+                <a
+                  href="#"
+                  style="margin-left: 1rem; color: var(--primary-yellow)"
+                  onclick="alert('preview')"
+                  >preview <i class="bi bi-box-arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Smart grid q-learning -->
+            <div class="project-tile">
+              <span class="project-tag"><i class="bi bi-robot"></i> RL</span>
+              <h3>Smart Grid Q‑learning</h3>
+              <p class="project-desc">
+                Autonomous navigation / energy optimization.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">PyTorch</span
+                ><span class="tech-pill">OpenAI gym</span>
+              </div>
+            </div>
+            <!-- Fake news detection -->
+            <div class="project-tile">
+              <span class="project-tag"
+                ><i class="bi bi-newspaper"></i> NLP</span
+              >
+              <h3>Online Fake News</h3>
+              <p class="project-desc">Fine-tuned BERT, deployed with Azure.</p>
+              <div class="project-tech">
+                <span class="tech-pill">BERT</span
+                ><span class="tech-pill">HuggingFace</span>
+              </div>
+            </div>
+            <!-- Human activity recognition -->
+            <div class="project-tile">
+              <span class="project-tag"
+                ><i class="bi bi-activity"></i> sensor</span
+              >
+              <h3>Human Activity</h3>
+              <p class="project-desc">
+                Mobile sensor time‑series classification.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">LSTM</span
+                ><span class="tech-pill">scikit-learn</span>
+              </div>
+            </div>
+            <!-- Damage propagation (CMAPSS) -->
+            <div class="project-tile">
+              <span class="project-tag"
+                ><i class="bi bi-turbine"></i> prognostics</span
+              >
+              <h3>Damage propagation</h3>
+              <p class="project-desc">
+                Aircraft engine run‑to‑failure modelling.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">XGBoost</span
+                ><span class="tech-pill">Time‑series</span>
+              </div>
+            </div>
+            <!-- BT churn ongoing -->
+            <div
+              class="project-tile"
+              style="grid-column: span 2; background: #1c1c1c"
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                "
+              >
+                <div>
+                  <span class="project-tag">ongoing · churn</span>
+                  <h3 style="font-size: 1.4rem">BT Customer Churn</h3>
+                </div>
+                <i
+                  class="bi bi-hourglass-split"
+                  style="font-size: 2rem; color: var(--primary-yellow)"
+                ></i>
+              </div>
+              <p>feature engineering, ensemble, deployment prep</p>
+            </div>
+          </div>
+
+          <!-- skills cloud (technical arsenal) -->
+          <div class="skills-cloud">
+            <div class="cloud-title">
+              <i
+                class="bi bi-cpu me-2 text-primary"
+                style="color: var(--primary-yellow) !important"
+              ></i
+              >Technical arsenal
+            </div>
+            <div>
+              <span class="skill-badge-xl">Python</span
+              ><span class="skill-badge-xl">PyTorch</span
+              ><span class="skill-badge-xl">Scikit‑learn</span>
+              <span class="skill-badge-xl">Pandas</span
+              ><span class="skill-badge-xl">SQL</span
+              ><span class="skill-badge-xl">Matplotlib</span>
+            </div>
+            <div class="sub-skill-block">
+              <span class="skill-badge-xl">Deep Learning</span
+              ><span class="skill-badge-xl">Computer Vision</span>
+              <span class="skill-badge-xl">Predictive Modeling</span
+              ><span class="skill-badge-xl">Time‑Series</span>
+              <span class="skill-badge-xl">ViT / Swin</span
+              ><span class="skill-badge-xl">BERT</span>
+              <span class="skill-badge-xl">Azure Pipelines</span
+              ><span class="skill-badge-xl">Git</span>
+            </div>
+          </div>
+
+          <!-- mini callout (CTA) -->
+          <!-- <div
+            style="
+              background: #1a1a1a;
+              border-radius: 36px;
+              padding: 2rem;
+              text-align: center;
+              border: 1px solid var(--border-dark);
+            "
+          >
+            <p
+              style="
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: var(--text-light);
+              "
+            >
+              <i
+                class="bi bi-envelope-paper-fill me-2"
+                style="color: var(--primary-yellow)"
+              ></i
+              >Looking for an AI engineer who delivers research‑grade work?
+            </p>
+            <a href="#contact" class="btn btn-primary"
+              ><i class="bi bi-send"></i> Contact Ahmed</a
+            >
+          </div> -->
+        </div>
+      </div>
+
+      <!-- achievement stats row -->
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1.5rem;
+          justify-content: center;
+          margin: 4rem 0 2rem;
+        "
+      >
+        <div class="stat-chip" style="padding: 1rem 2.5rem">
+          <i class="bi bi-graph-up"></i> 18% team productivity boost
+        </div>
+        <div class="stat-chip" style="padding: 1rem 2.5rem">
+          <i class="bi bi-star-fill"></i> 25% fewer negative reviews
+        </div>
+        <div class="stat-chip" style="padding: 1rem 2.5rem">
+          <i class="bi bi-award-fill"></i> 1 publication approved
+        </div>
+      </div>
+    </div>
+    <!-- end container (projects/experience block) -->
+
+    <!-- contact section (id for navigation) -->
+    <div
+      id="contact"
+      class="container section-offset"
+      style="scroll-margin-top: 70px"
+    >
+      <div class="contact-section">
+        <div class="contact-left">
+          <h2>
+            Let's build something
+            <span style="color: var(--primary-yellow)">intelligent</span>
+          </h2>
+          <p>
+            Available for collaborations, research roles or freelance. Based in
+            Belfast — remote worldwide.
+          </p>
+          <div
+            style="
+              display: flex;
+              gap: 2rem;
+              margin-top: 1.5rem;
+              flex-wrap: wrap;
+            "
+          >
+            <span
+              ><i
+                class="bi bi-envelope-fill"
+                style="color: var(--primary-yellow)"
+              ></i>
+              ahmedalidsai851@gmail.com</span
+            >
+            <span
+              ><i
+                class="bi bi-telephone-fill"
+                style="color: var(--primary-yellow)"
+              ></i>
+              +44 7923 408412</span
+            >
+          </div>
+        </div>
+        <div class="contact-buttons">
+          <a
+            href="https://github.com/ahmed-ai"
+            target="_blank"
+            class="social-circle"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/ahmed-ali-ml"
+            target="_blank"
+            class="social-circle"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <!-- <a
+            href="https://twitter.com/ahmed_ai"
+            target="_blank"
+            class="social-circle"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a href="mailto:ahmedalidsai851@gmail.com" class="social-circle"
+            ><i class="bi bi-envelope"></i
+          ></a> -->
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Ahmed Ali — AI/ML Engineer — built with
+        <i
+          class="bi bi-suit-heart-fill"
+          style="color: var(--primary-yellow)"
+        ></i>
+        for research & production
+      </div>
+    </div>
+
+    <!-- smooth scroll and console greeting -->
+    <script>
+      (function () {
+        console.log("Ahmed Ali · black & yellow portfolio — navigation active");
+        // optional: close any alert on resume button
+        document.querySelectorAll('a[href="#"]').forEach((link) => {
+          link.addEventListener("click", (e) => {
+            if (
+              link.classList.contains("btn-outline-light") &&
+              link.innerText.includes("Resume")
+            ) {
+              e.preventDefault();
+              alert("Resume download simulation — replace with actual file");
+            }
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
